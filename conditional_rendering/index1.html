@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Product: {{ product }}</h1>
+      <h2 v-if="quantity >= 20">Available</h2>
+      <h2 v-else-if="quantity > 0 && quantity < 20">Limited Availablity</h2>
+      <h2 v-else>Sold Out</h2>
+      <br><br>
+      <h3 v-show="sale">On sale!!</h3>
+
+    </div>
+
+
+    <!-- Optional JavaScript -->
+
+    <!-- production version, optimized for size and speed -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="main1.js"></script>
+
+  </body>
+</html>

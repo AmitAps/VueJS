@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>{{ message }}</h1>
+        <h2> {{ value }}</h2>
+      <h2> {{ value * 5}}</h2>
+      <h2>{{ "hello " + 33 }}</h2>
+      <h2>{{ message.split('').reverse().join('') }}</h2>
+      <img :src="imgSrc">
+      <br>
+      <a :href="link">MyWeb</a>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+
+    <!-- production version, optimized for size and speed -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="main.js"></script>
+
+  </body>
+</html>
